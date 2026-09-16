@@ -12,3 +12,10 @@ window.addEventListener('scroll', function (){
          const top = document.getElementById("Top").style.top = "75px";
     }
 })
+const animation = document.getElementById('animation')
+
+for(let a = 0; a <= 11; a++){
+    x = animation.children[a]
+    //x.style.height = `${ }px `
+    //x.style.width = `${a * 20}px `
+}
