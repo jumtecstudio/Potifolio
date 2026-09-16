@@ -23,16 +23,17 @@ li{
     justify-content: center;
     align-items: center;
     color:white;
-    background: rgb(255, 125, 125);
+    background: rgb(136, 3, 3);
     display: flex;
     button{
         margin-left: 20px;
-        height: 30px;
-        width: 70px;
+        height: 40px;
+        width: 80px;
         color: white;
         background-color: rgb(30, 183, 235);
         border-radius:5px ;
         border: none;
+        font-weight: 900;
         
     
     }
@@ -70,23 +71,23 @@ body .box:nth-child(2){
 }
 
 .top-content{
-    top: 60px;
+    top: 75px;
     transition: linear;
     transform: linear;
     height: 50px;
     position: fixed;
-    background-color: white;
+    background-color: rgba(136, 136, 136, 0.215);
     width: 1000px;
     z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 50px;
-    border-left: 2px solid ;
-    border-right: 2px solid;
+  
 }
 .head_text{
-    font-weight: 100;
+    font-weight: 900;
+    font-size: 20px;
 
 }
 
@@ -172,7 +173,7 @@ body .box:nth-child(2){
 #hire{
     height: 50px;
     width: 200px;
-    background: hotpink;
+    background: rgb(30, 199, 255);
     color: white;
     border: none;
     font-weight: 900;
@@ -202,7 +203,7 @@ body .box:nth-child(2){
     width: 500px;
     justify-content: space-around;
     text-decoration: underline;
-    text-decoration-color: rgb(62, 2, 65);
+    text-decoration-color: rgb(255, 255, 255);
     font-weight:600 ;
     text-underline-offset: 25px;
     text-decoration-thickness: 4px;
@@ -219,20 +220,23 @@ li{
     height: 70px;
     width: 100px;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: rgb(78, 51, 51);
     border-radius: 10px;
+    color: white;
 }
 .top_contents :nth-child(4){
-    background: whitesmoke;
+    background: rgb(196, 114, 7);
+    color: white;
 }
 .name{
+    width: 500px;
     height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    background: linear-gradient(to right, hsla(10, 40%, 48%, 0.2) ,black);
+    background: linear-gradient(to right, hsla(203, 87%, 50%, 0.2) ,rgb(3, 2, 40));
     right: 0;
     color: white;
     
@@ -275,32 +279,7 @@ li{
     100%{display: flex;}    
 }
 
-.bar{
-    height: 50px;
-    width: 1000px;
-    background: transparent;
-    position: fixed;
-    bottom: 0;
-    left: 175px;
-    
-}
-.bar-design{
-    display: flex;
-    
-    border-radius: 10px;
-    align-items: center;
-    justify-content: space-around;
-    height: 50px;
-    width: 100%;
-    background: hsla(0, 0%, 39%, 0.4);
-    span{
-        height: 35px;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
+
 
 
 @media screen and (max-width:768px) {
@@ -314,22 +293,18 @@ li{
     .top-content{
         width: 100%;
         font-size: 10px;
-        overflow: hidden;
-    }
-    .top_contents{
-        width: 270px;
         
     }
+    li{
+        width: 79px;
+        
+    }
+    .top_contents{
+        width: 320px;
+    }
     .head_text{
-        text-align: center;
-        display: flex;          
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        width: 120px;
-        border-right:1px solid ;
-        border-radius: 50px;
-        border-left: 1px solid;
+        font-size: 15px;
+        
     }
     .page-content{
         width: 100%;
@@ -348,4 +323,20 @@ li{
         width: 100%;
     }
 
+}
+
+.skills{
+    margin-left: -110px;
+}
+.cont-1{
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
 }

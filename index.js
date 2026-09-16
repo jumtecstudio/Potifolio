@@ -7,6 +7,6 @@ window.addEventListener('scroll', function (){
         
     }
     else{
-         const top = document.getElementById("Top").style.top = "60px";
+         const top = document.getElementById("Top").style.top = "75px";
     }
 })
