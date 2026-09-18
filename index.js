@@ -19,3 +19,13 @@ for(let a = 0; a <= 11; a++){
     //x.style.height = `${ }px `
     //x.style.width = `${a * 20}px `
 }
+const expbox = document.getElementById('exp_box')
+const Expertise = document.getElementById("expertise")
+Expertise.addEventListener('click', ()=>{
+    expbox.style.display = 'flex';
+    
+})
+const closex = document.getElementById("close");
+closex.addEventListener('click', ()=>{
+    expbox.style.display = 'none';
+})

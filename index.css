@@ -21,7 +21,8 @@ p{
     justify-content: center;
     align-items: center;
     color:white;
-    background: rgb(136, 3, 3);
+    background: navy;
+    /*background: rgb(136, 3, 3);*/
     display: flex;
     button{
         margin-left: 20px;
@@ -41,7 +42,7 @@ p{
     display: flex;
     height: 300vh;
     width: 100%;
-
+ 
     flex-direction: column;
     align-items: center;
 }
@@ -60,6 +61,12 @@ p{
     align-items:center ;
     background: rgb(255, 255, 255);
     
+}
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 body .box:nth-child(1){
    animation: vanish s forwards linear ;
@@ -127,18 +134,18 @@ body .box:nth-child(2){
 #hire{
     height: 50px;
     width: 200px;
-    background: rgb(30, 199, 255);
+    background: rgb(10, 168, 186);
     color: white;
     margin-top: 10px;
     border: none;
     font-weight: 900;
-    animation: type 2s infinite linear;
-    background: hsla(179, 98%, 48%, 0.765);
+    /*animation: type 2s infinite linear;*/
+    
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 0 4px 30px rgba(255,255,255, 0.19);
     border: 1px solid rgb(255, 255, 255, 0.5);
-    border-radius: 10px;
+    
 
 
 }
@@ -158,8 +165,8 @@ body .box:nth-child(2){
 .Developer_details{
     
     height: 250px;
-    
-    width: 80%;
+    container-type: inline-size;
+    width: 90%;
     font-weight:600 ;
     box-shadow: 0 4px 30px rgba(255,255,255, 0.19);
     /*-webkit-backdrop-filter: blur(5px);*/
@@ -171,8 +178,9 @@ body .box:nth-child(2){
     justify-content: center;
     border-radius:  10px;
     flex-direction: column;
+    margin-bottom: 10px;
     p{
-        font-size: 20px;
+        font-size: clamp(16px, cqw, 40px);
         
         /*-webkit-text-stroke: 1px rgb(93, 95, 96);*/
     }
@@ -200,18 +208,85 @@ body .box:nth-child(2){
 
 }
 li{
+    cursor: pointer;
     display: flex;
     align-items: center;
     height: 70px;
     width: 100px;
     justify-content: center;
-    background-color: rgb(78, 51, 51);
+    background-color: rgb(210, 210, 207);
     border-radius: 10px;
+    color: navy;
+    font-weight: 500;
+    text-align: center;
+    
+}
+li:hover{
+    background: navy;
     color: white;
 }
-.top_contents :nth-child(4){
-    background: rgb(196, 114, 7);
-    color: white;
+.epertise-box{
+    container-type: inline-size;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 80px;
+    height: 60%;
+    width: 60%;
+    color: rgb(1, 217, 255);
+    background: radial-gradient(circle at 30%, rgba(0, 0, 0, 0.77) , rgba(0, 0, 0, 0.392));
+    position: fixed;
+    animation: appear 1s forwards linear;
+    .heading-text{
+        font-size: 120%;
+        color: orangered;
+    }
+    p{
+        font-size:clamp(16px, 2.2cqw, 40px);
+    }
+    .what{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        color: white;
+        height: 50%;
+        flex-wrap: wrap;
+        
+    }
+    ol{ width: 200px;
+        display: flex;
+        background:rgb(10, 168, 186);
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        
+    }
+    .close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    .close:hover{
+        background-color: red;
+    }
+}
+@keyframes appear {
+    0%{
+     transform: translateX(1000px);   
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+    
 }
 .name{
     width: 500px;
@@ -244,27 +319,13 @@ li{
     background: linear-gradient(to right,rgba(2, 54, 63, 0.98), rgba(108, 9, 9, 0.9));
     p{
         color: rgb(255, 255, 255);
-        font-size: 200%;
+        font-size: clamp(16px, 2.1cqw, 40px);
         font-weight: 900;
         text-align: center;
 
     }
 }
 
-.top-show-box-2{
-    display: flex;
-    align-items:center ;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    width: 50%;
-    z-index: 0;
-    background: linear-gradient(to right, rgb(255, 255, 255, 0.3),rgba(2, 54, 63, 0.98));
-    p{
-        color: white;
-        font-weight: 900;
-    }
-}
 
 .top-show-background{
     width: 60%;
@@ -287,8 +348,8 @@ img{
     justify-content: center;
     button{
         color: white;
-        background: orangered;
-        border-radius: 40px;
+        background: rgb(10, 168, 186);
+
         border: none;
         width: 50%;
         font-weight: 900;
@@ -298,9 +359,7 @@ img{
 
 }
 @keyframes bounce {
-    from{background-color:red}
-    to {background-color: orangered;}
-    
+ 
 }
 .head_text-2{
     font-weight: 900;
@@ -463,6 +522,8 @@ img{
         background-color: transparent;
         height: 50%;
         width: 20%;
+        color: white;
+        
         background-color: #4a556851;
         border-radius: 5px;
     }
@@ -486,7 +547,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: clamp(16px, 1.4cqw, 40px);
     font-weight: 900;
     color: white;
 }
@@ -538,7 +599,7 @@ img{
 
     }
     .top-show-box p{
-        font-size: 120%;
+       
     }
     
     .top-show-background{
@@ -621,9 +682,13 @@ img{
         }
     }
     .Developer_details{
-        margin-left: 0;
         text-align: center;
         width: 100%;
     }
+    .epertise-box{
+        height: 80%;
+        
+    }
+
 
 }
