@@ -243,6 +243,7 @@ li:hover{
         color: orangered;
     }
     p{
+        text-align: center;
         font-size:clamp(16px, 2.2cqw, 40px);
     }
     .what{
